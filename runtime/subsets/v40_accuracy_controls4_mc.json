@@ -1,0 +1,58 @@
+[
+  {
+    "video_id": "movie101_16",
+    "video_path": "data/mlvu/videos/1_plotQA/movie101_16.mp4",
+    "duration": 740,
+    "conversations": [
+      {
+        "question": "What color is the sweater worn by the man at the beginning of the video?",
+        "choices": ["Red", "Blue", "Yellow", "White"],
+        "answer": "Red",
+        "question_type": "plotQA",
+        "_original_index": 0
+      }
+    ]
+  },
+  {
+    "video_id": "needle_13",
+    "video_path": "data/mlvu/videos/2_needle/needle_13.mp4",
+    "duration": 493.15,
+    "conversations": [
+      {
+        "question": "What are the volunteers doing in the rubble during the simulation drill?",
+        "choices": ["Hiding from an enemy", "Creating a barricade", "Building a structure", "Searching for rocket attack casualties"],
+        "answer": "Searching for rocket attack casualties",
+        "question_type": "findNeedle",
+        "_original_index": 5
+      }
+    ]
+  },
+  {
+    "video_id": "count_170",
+    "video_path": "data/mlvu/videos/4_count/count_170.mp4",
+    "duration": 500.12,
+    "conversations": [
+      {
+        "question": "Throughout this video, what is the total count of occurrences for the scene featuring the 'zumba' action",
+        "choices": ["5", "4", "1", "2"],
+        "answer": "5",
+        "question_type": "count",
+        "_original_index": 10
+      }
+    ]
+  },
+  {
+    "video_id": "ego_74",
+    "video_path": "data/mlvu/videos/3_ego/ego_74.mp4",
+    "duration": 480,
+    "conversations": [
+      {
+        "question": "In what location did i last see the cat?",
+        "choices": ["in the backyard", "in the kitchen", "in the living room", "in the storage room"],
+        "answer": "in the storage room",
+        "question_type": "ego",
+        "_original_index": 19
+      }
+    ]
+  }
+]

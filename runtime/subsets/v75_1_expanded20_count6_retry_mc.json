@@ -1,0 +1,22 @@
+[
+  {
+    "video_id": "count_6",
+    "video_path": "data/mlvu/videos/4_count/count_6.mp4",
+    "duration": 480.03,
+    "conversations": [
+      {
+        "question": "In this video, how many times does the scene of the 'abseiling' action appear in total?",
+        "choices": [
+          "4",
+          "5",
+          "3",
+          "1"
+        ],
+        "answer": "3",
+        "question_type": "count",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 24
+      }
+    ]
+  }
+]

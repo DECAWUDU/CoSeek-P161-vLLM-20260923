@@ -1,0 +1,38 @@
+[
+  {
+    "video_id": "movie101_19",
+    "video_path": "data/mlvu/videos/1_plotQA/movie101_19.mp4",
+    "duration": 477,
+    "conversations": [{
+      "question": "How many people are interacting at the staircase?",
+      "choices": ["Four", "Two", "Five", "Three"],
+      "answer": "Three",
+      "question_type": "plotQA",
+      "_original_index": 1
+    }]
+  },
+  {
+    "video_id": "count_138",
+    "video_path": "data/mlvu/videos/4_count/count_138.mp4",
+    "duration": 500.18,
+    "conversations": [{
+      "question": "In this video, how many times does the scene of the 'making jewelry' action appear in total?",
+      "choices": ["4", "5", "2", "6"],
+      "answer": "5",
+      "question_type": "count",
+      "_original_index": 0
+    }]
+  },
+  {
+    "video_id": "count_170",
+    "video_path": "data/mlvu/videos/4_count/count_170.mp4",
+    "duration": 500.12,
+    "conversations": [{
+      "question": "Throughout this video, what is the total count of occurrences for the scene featuring the 'zumba' action",
+      "choices": ["5", "4", "1", "2"],
+      "answer": "5",
+      "question_type": "count",
+      "_original_index": 10
+    }]
+  }
+]

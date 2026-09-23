@@ -1,0 +1,22 @@
+[
+  {
+    "video_id": "count_170",
+    "video_path": "data/mlvu/videos/4_count/count_170.mp4",
+    "duration": 500.11999999999995,
+    "conversations": [
+      {
+        "question": "Throughout this video, what is the total count of occurrences for the scene featuring the 'zumba' action",
+        "choices": [
+          "5",
+          "4",
+          "1",
+          "2"
+        ],
+        "answer": "5",
+        "question_type": "count",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 10
+      }
+    ]
+  }
+]

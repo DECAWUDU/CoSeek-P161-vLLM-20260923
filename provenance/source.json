@@ -1,0 +1,13 @@
+{
+  "runtime": "p161_decoder_repair_20260921/runtime_candidate",
+  "config": "p161_lvb_unseen40_20260923",
+  "p162_included": false,
+  "runtime_algorithm_changed": false,
+  "deployment_changes": [
+    "all strong-model roles via vLLM",
+    "configurable service/model",
+    "2-5 choices plus SRT input",
+    "resident search model across episodes"
+  ],
+  "target_endpoint_live_validated": false
+}

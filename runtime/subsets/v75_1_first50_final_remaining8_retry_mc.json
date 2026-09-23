@@ -1,0 +1,141 @@
+[
+  {
+    "video_id": "movie101_16",
+    "video_path": "data/mlvu/videos/1_plotQA/movie101_16.mp4",
+    "duration": 740,
+    "conversations": [
+      {
+        "question": "What color is the sweater worn by the man at the beginning of the video?",
+        "choices": [
+          "Red",
+          "Blue",
+          "Yellow",
+          "White"
+        ],
+        "answer": "Red",
+        "question_type": "plotQA",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 0
+      },
+      {
+        "question": "What kind of animals are being kept in the video?",
+        "choices": [
+          "Sheep",
+          "Dog",
+          "Cat",
+          "Pig"
+        ],
+        "answer": "Sheep",
+        "question_type": "plotQA",
+        "_original_index": 1,
+        "_v75_1_eval_flat_index": 1
+      },
+      {
+        "question": "What color is the water bottle on the table in the video?",
+        "choices": [
+          "White",
+          "Yellow",
+          "Blue",
+          "Green"
+        ],
+        "answer": "Green",
+        "question_type": "plotQA",
+        "_original_index": 2,
+        "_v75_1_eval_flat_index": 2
+      },
+      {
+        "question": "What color is the table in the scene where one person gives money to another at the end of the video?",
+        "choices": [
+          "White",
+          "Blue",
+          "Green",
+          "Yellow"
+        ],
+        "answer": "Blue",
+        "question_type": "plotQA",
+        "_original_index": 3,
+        "_v75_1_eval_flat_index": 3
+      }
+    ]
+  },
+  {
+    "video_id": "count_170",
+    "video_path": "data/mlvu/videos/4_count/count_170.mp4",
+    "duration": 500.11999999999995,
+    "conversations": [
+      {
+        "question": "Throughout this video, what is the total count of occurrences for the scene featuring the 'zumba' action",
+        "choices": [
+          "5",
+          "4",
+          "1",
+          "2"
+        ],
+        "answer": "5",
+        "question_type": "count",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 10
+      }
+    ]
+  },
+  {
+    "video_id": "order_250",
+    "video_path": "data/mlvu/videos/5_order/order_250.mp4",
+    "duration": 490.03,
+    "conversations": [
+      {
+        "question": "Can you tell me which option represents the actual order of actions shown in the video?",
+        "choices": [
+          "pole vault --> baking cookies --> tossing coin --> abseiling",
+          "tossing coin --> pole vault --> baking cookies --> abseiling",
+          "baking cookies --> tossing coin --> pole vault --> abseiling",
+          "baking cookies --> abseiling --> tossing coin --> pole vault"
+        ],
+        "answer": "baking cookies --> tossing coin --> pole vault --> abseiling",
+        "question_type": "order",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 32
+      }
+    ]
+  },
+  {
+    "video_id": "count_105",
+    "video_path": "data/mlvu/videos/4_count/count_105.mp4",
+    "duration": 460.01,
+    "conversations": [
+      {
+        "question": "Throughout this video, what is the total count of occurrences for the scene featuring the 'carving pumpkin' action",
+        "choices": [
+          "5",
+          "6",
+          "3",
+          "1"
+        ],
+        "answer": "1",
+        "question_type": "count",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 44
+      }
+    ]
+  },
+  {
+    "video_id": "needle_113",
+    "video_path": "data/mlvu/videos/2_needle/needle_113.mp4",
+    "duration": 5604.42,
+    "conversations": [
+      {
+        "question": "What are the volunteers searching for during the simulation drill?",
+        "choices": [
+          "Survivors of a natural disaster",
+          "Rocket attack casualties",
+          "Hidden treasure",
+          "Lost items"
+        ],
+        "answer": "Rocket attack casualties",
+        "question_type": "findNeedle",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 34
+      }
+    ]
+  }
+]

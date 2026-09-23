@@ -1,0 +1,42 @@
+[
+  {
+    "video_id": "needle_18",
+    "video_path": "data/mlvu/videos/2_needle/needle_18.mp4",
+    "duration": 494.0,
+    "conversations": [
+      {
+        "question": "Where are the people tourists walking?",
+        "choices": [
+          "In a city",
+          "In a forest",
+          "On the embankment in a fishing village",
+          "On a beach"
+        ],
+        "answer": "On the embankment in a fishing village",
+        "question_type": "findNeedle",
+        "_original_index": 0,
+        "_v20_source_flat_index": 45
+      }
+    ]
+  },
+  {
+    "video_id": "movie101_104",
+    "video_path": "data/mlvu/videos/1_plotQA/movie101_104.mp4",
+    "duration": 514,
+    "conversations": [
+      {
+        "question": "Why does the girl with glasses run downstairs in a hurry?",
+        "choices": [
+          "Chasing someone",
+          "Being chased",
+          "To help another girl out of a situation",
+          "To get something"
+        ],
+        "answer": "To help another girl out of a situation",
+        "question_type": "plotQA",
+        "_original_index": 0,
+        "_v20_source_flat_index": 25
+      }
+    ]
+  }
+]

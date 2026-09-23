@@ -1,0 +1,374 @@
+[
+  {
+    "video_id": "movie101_16",
+    "video_path": "data/mlvu/videos/1_plotQA/movie101_16.mp4",
+    "duration": 740,
+    "conversations": [
+      {
+        "question": "What color is the sweater worn by the man at the beginning of the video?",
+        "choices": [
+          "Red",
+          "Blue",
+          "Yellow",
+          "White"
+        ],
+        "answer": "Red",
+        "question_type": "plotQA",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 0
+      },
+      {
+        "question": "What kind of animals are being kept in the video?",
+        "choices": [
+          "Sheep",
+          "Dog",
+          "Cat",
+          "Pig"
+        ],
+        "answer": "Sheep",
+        "question_type": "plotQA",
+        "_original_index": 1,
+        "_v75_1_eval_flat_index": 1
+      },
+      {
+        "question": "What color is the water bottle on the table in the video?",
+        "choices": [
+          "White",
+          "Yellow",
+          "Blue",
+          "Green"
+        ],
+        "answer": "Green",
+        "question_type": "plotQA",
+        "_original_index": 2,
+        "_v75_1_eval_flat_index": 2
+      }
+    ]
+  },
+  {
+    "video_id": "needle_13",
+    "video_path": "data/mlvu/videos/2_needle/needle_13.mp4",
+    "duration": 493.15,
+    "conversations": [
+      {
+        "question": "What are the volunteers doing to find the casualties of the rocket attack in the simulation drill?",
+        "choices": [
+          "Digging through the rubble",
+          "Using a metal detector",
+          "Using a search dog",
+          "Using a drone"
+        ],
+        "answer": "Digging through the rubble",
+        "question_type": "findNeedle",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 4
+      },
+      {
+        "question": "What are the volunteers doing in the rubble during the simulation drill?",
+        "choices": [
+          "Hiding from an enemy",
+          "Creating a barricade",
+          "Building a structure",
+          "Searching for rocket attack casualties"
+        ],
+        "answer": "Searching for rocket attack casualties",
+        "question_type": "findNeedle",
+        "_original_index": 1,
+        "_v75_1_eval_flat_index": 5
+      }
+    ]
+  },
+  {
+    "video_id": "haimian_7",
+    "video_path": "data/mlvu/videos/7_topic_reasoning/haimian_7.mp4",
+    "duration": 426,
+    "conversations": [
+      {
+        "question": "Who is the protagonist of the video?",
+        "choices": [
+          "Cartoon Sponge",
+          "Cartoon Fish",
+          "Cartoon Shark",
+          "Cartoon Jellyfish"
+        ],
+        "answer": "Cartoon Sponge",
+        "question_type": "topic_reasoning",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 7
+      }
+    ]
+  },
+  {
+    "video_id": "movie101_109",
+    "video_path": "data/mlvu/videos/7_topic_reasoning/movie101_109.mp4",
+    "duration": 670,
+    "conversations": [
+      {
+        "question": "What is the setting of the video?",
+        "choices": [
+          "Ocean",
+          "Forest",
+          "Prairie",
+          "City"
+        ],
+        "answer": "Prairie",
+        "question_type": "topic_reasoning",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 8
+      }
+    ]
+  },
+  {
+    "video_id": "surveil_59",
+    "video_path": "data/mlvu/videos/6_anomaly_reco/surveil_59.mp4",
+    "duration": 1200.63,
+    "conversations": [
+      {
+        "question": "Is there anything unusual in this surveillance video? if there is, what type of unusual activity is it?",
+        "choices": [
+          "Burglary",
+          "Shooting",
+          "Normal",
+          "RoadAccidents"
+        ],
+        "answer": "Normal",
+        "question_type": "anomaly_reco",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 14
+      }
+    ]
+  },
+  {
+    "video_id": "movie101_19",
+    "video_path": "data/mlvu/videos/1_plotQA/movie101_19.mp4",
+    "duration": 477,
+    "conversations": [
+      {
+        "question": "What kind of animal are the people in the video leading?",
+        "choices": [
+          "Dog",
+          "Pig",
+          "Sheep",
+          "Tiger"
+        ],
+        "answer": "Dog",
+        "question_type": "plotQA",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 15
+      },
+      {
+        "question": "What color is the flower field at the end of the video?",
+        "choices": [
+          "Red",
+          "Green",
+          "Yellow",
+          "Blue"
+        ],
+        "answer": "Yellow",
+        "question_type": "plotQA",
+        "_original_index": 2,
+        "_v75_1_eval_flat_index": 17
+      }
+    ]
+  },
+  {
+    "video_id": "ego_74",
+    "video_path": "data/mlvu/videos/3_ego/ego_74.mp4",
+    "duration": 480.0,
+    "conversations": [
+      {
+        "question": "Where was the pack of cling wrap before i picked it up?",
+        "choices": [
+          "in the bathroom cabinet",
+          "under the bed",
+          "on the living room table",
+          "in the kitchen drawer"
+        ],
+        "answer": "in the kitchen drawer",
+        "question_type": "ego",
+        "_original_index": 1,
+        "_v75_1_eval_flat_index": 20
+      }
+    ]
+  },
+  {
+    "video_id": "order_53",
+    "video_path": "data/mlvu/videos/5_order/order_53.mp4",
+    "duration": 665.78,
+    "conversations": [
+      {
+        "question": "Arrange the following events from the video in the correct chronological order: (1)a guy sits and talks inside; (2)a man surfs on a body of water; (3)a lady spins on skates; (4)the credits of the video are shown.",
+        "choices": [
+          "1->2->3->4",
+          "2->1->3->4",
+          "4->3->2->1",
+          "3->2->1->4"
+        ],
+        "answer": "1->2->3->4",
+        "question_type": "order",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 23
+      }
+    ]
+  },
+  {
+    "video_id": "count_6",
+    "video_path": "data/mlvu/videos/4_count/count_6.mp4",
+    "duration": 480.03,
+    "conversations": [
+      {
+        "question": "In this video, how many times does the scene of the 'abseiling' action appear in total?",
+        "choices": [
+          "4",
+          "5",
+          "3",
+          "1"
+        ],
+        "answer": "3",
+        "question_type": "count",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 24
+      }
+    ]
+  },
+  {
+    "video_id": "movie101_104",
+    "video_path": "data/mlvu/videos/1_plotQA/movie101_104.mp4",
+    "duration": 514,
+    "conversations": [
+      {
+        "question": "What is the girl's reaction after the phone call at the beginning of the video?",
+        "choices": [
+          "Angry",
+          "She walks on the road with a blank stare",
+          "Joyful",
+          "Happy"
+        ],
+        "answer": "She walks on the road with a blank stare",
+        "question_type": "plotQA",
+        "_original_index": 1,
+        "_v75_1_eval_flat_index": 26
+      }
+    ]
+  },
+  {
+    "video_id": "needle_72",
+    "video_path": "data/mlvu/videos/2_needle/needle_72.mp4",
+    "duration": 471.08,
+    "conversations": [
+      {
+        "question": "What is the woman doing in the flower shop?",
+        "choices": [
+          "Cleaning the shop",
+          "Arranging books",
+          "Watering the plants",
+          "Making a bouquet of fresh flowers"
+        ],
+        "answer": "Making a bouquet of fresh flowers",
+        "question_type": "findNeedle",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 28
+      }
+    ]
+  },
+  {
+    "video_id": "en_tv_11",
+    "video_path": "data/mlvu/videos/1_plotQA/en_tv_11.mp4",
+    "duration": 465,
+    "conversations": [
+      {
+        "question": "Why are the woman in blue clothing and the man with a scar on his face surrounded by armed personnel?",
+        "choices": [
+          "Because they had a fight",
+          "Because they killed someone",
+          "Because they triggered the alarm device",
+          "Because they robbed"
+        ],
+        "answer": "Because they triggered the alarm device",
+        "question_type": "plotQA",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 29
+      }
+    ]
+  },
+  {
+    "video_id": "order_4",
+    "video_path": "data/mlvu/videos/5_order/order_4.mp4",
+    "duration": 708.4100000000001,
+    "conversations": [
+      {
+        "question": "Arrange the following events from the video in the correct chronological order: (1)the group begins to dance in unison; (2)some of the group are on their feet; (3)a group gathers to the center of a gym floor; (4)some are in wheel chairs.",
+        "choices": [
+          "1->2->3->4",
+          "2->3->1->4",
+          "4->3->2->1",
+          "3->1->2->4"
+        ],
+        "answer": "3->1->2->4",
+        "question_type": "order",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 37
+      }
+    ]
+  },
+  {
+    "video_id": "surveil_172",
+    "video_path": "data/mlvu/videos/6_anomaly_reco/surveil_172.mp4",
+    "duration": 321.85,
+    "conversations": [
+      {
+        "question": "Is there any abnormality in this surveillance video? if so, what type of abnormality is it?",
+        "choices": [
+          "Arson",
+          "Abuse",
+          "Fighting",
+          "Robbery"
+        ],
+        "answer": "Robbery",
+        "question_type": "anomaly_reco",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 38
+      }
+    ]
+  },
+  {
+    "video_id": "surveil_25",
+    "video_path": "data/mlvu/videos/6_anomaly_reco/surveil_25.mp4",
+    "duration": 195.06,
+    "conversations": [
+      {
+        "question": "Are there any irregularities in this surveillance video? if there are, what sort are they?",
+        "choices": [
+          "Burglary",
+          "Stealing",
+          "Robbery",
+          "Assault"
+        ],
+        "answer": "Stealing",
+        "question_type": "anomaly_reco",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 42
+      }
+    ]
+  },
+  {
+    "video_id": "order_288",
+    "video_path": "data/mlvu/videos/5_order/order_288.mp4",
+    "duration": 511.25,
+    "conversations": [
+      {
+        "question": "Please identify the option that corresponds to the order of events as they occur in the video.",
+        "choices": [
+          "water sliding --> making jewelry --> abseiling --> javelin throw",
+          "abseiling --> water sliding --> javelin throw --> making jewelry",
+          "javelin throw --> water sliding --> abseiling --> making jewelry",
+          "water sliding --> javelin throw --> abseiling --> making jewelry"
+        ],
+        "answer": "javelin throw --> water sliding --> abseiling --> making jewelry",
+        "question_type": "order",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 48
+      }
+    ]
+  }
+]

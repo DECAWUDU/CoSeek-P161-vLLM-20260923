@@ -1,0 +1,38 @@
+[
+  {
+    "video_id": "en_tv_11",
+    "video_path": "data/mlvu/videos/1_plotQA/en_tv_11.mp4",
+    "duration": 465,
+    "conversations": [{
+      "question": "Why are the woman in blue clothing and the man with a scar on his face surrounded by armed personnel?",
+      "choices": ["Because they had a fight", "Because they killed someone", "Because they triggered the alarm device", "Because they robbed"],
+      "answer": "Because they triggered the alarm device",
+      "question_type": "plotQA",
+      "_original_index": 0
+    }]
+  },
+  {
+    "video_id": "count_138",
+    "video_path": "data/mlvu/videos/4_count/count_138.mp4",
+    "duration": 500.18,
+    "conversations": [{
+      "question": "In this video, how many times does the scene of the 'making jewelry' action appear in total?",
+      "choices": ["4", "5", "2", "6"],
+      "answer": "5",
+      "question_type": "count",
+      "_original_index": 0
+    }]
+  },
+  {
+    "video_id": "order_53",
+    "video_path": "data/mlvu/videos/5_order/order_53.mp4",
+    "duration": 665.78,
+    "conversations": [{
+      "question": "Arrange the following events from the video in the correct chronological order: (1)a guy sits and talks inside; (2)a man surfs on a body of water; (3)a lady spins on skates; (4)the credits of the video are shown.",
+      "choices": ["1->2->3->4", "2->1->3->4", "4->3->2->1", "3->2->1->4"],
+      "answer": "1->2->3->4",
+      "question_type": "order",
+      "_original_index": 0
+    }]
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "video_id": "count_170",
+    "video_path": "data/mlvu/videos/4_count/count_170.mp4",
+    "duration": 500.12,
+    "conversations": [{
+      "question": "Throughout this video, what is the total count of occurrences for the scene featuring the 'zumba' action",
+      "choices": ["5", "4", "1", "2"],
+      "answer": "5",
+      "question_type": "count",
+      "_original_index": 0
+    }]
+  },
+  {
+    "video_id": "surveil_186",
+    "video_path": "data/mlvu/videos/6_anomaly_reco/surveil_186.mp4",
+    "duration": 403.58,
+    "conversations": [{
+      "question": "Is there any abnormality in this surveillance video? if so, what type of abnormality is it?",
+      "choices": ["Abuse", "Arson", "Stealing", "Robbery"],
+      "answer": "Robbery",
+      "question_type": "anomaly_reco",
+      "_original_index": 0
+    }]
+  },
+  {
+    "video_id": "needle_18",
+    "video_path": "data/mlvu/videos/2_needle/needle_18.mp4",
+    "duration": 494.0,
+    "conversations": [{
+      "question": "Where are the people tourists walking?",
+      "choices": ["In a city", "In a forest", "On the embankment in a fishing village", "On a beach"],
+      "answer": "On the embankment in a fishing village",
+      "question_type": "findNeedle",
+      "_original_index": 0
+    }]
+  },
+  {
+    "video_id": "order_250",
+    "video_path": "data/mlvu/videos/5_order/order_250.mp4",
+    "duration": 490.03,
+    "conversations": [{
+      "question": "Can you tell me which option represents the actual order of actions shown in the video?",
+      "choices": ["pole vault --> baking cookies --> tossing coin --> abseiling", "tossing coin --> pole vault --> baking cookies --> abseiling", "baking cookies --> tossing coin --> pole vault --> abseiling", "baking cookies --> abseiling --> tossing coin --> pole vault"],
+      "answer": "baking cookies --> tossing coin --> pole vault --> abseiling",
+      "question_type": "order",
+      "_original_index": 0
+    }]
+  }
+]

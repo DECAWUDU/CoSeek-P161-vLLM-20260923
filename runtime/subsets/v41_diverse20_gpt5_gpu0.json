@@ -1,0 +1,115 @@
+[
+  {
+    "video_id": "en_tv_31",
+    "video_path": "data/mlvu/videos/1_plotQA/en_tv_31.mp4",
+    "duration": 577,
+    "conversations": [
+      {
+        "question": "What is the woman in the blue dress holding in the video?",
+        "choices": [
+          "Food",
+          "Mirror",
+          "Flower",
+          "Water Cup"
+        ],
+        "answer": "Flower",
+        "question_type": "plotQA",
+        "_original_index": 0,
+        "_v20_source_flat_index": 11
+      },
+      {
+        "question": "What does the drone operated by the two men hit?",
+        "choices": [
+          "Photo",
+          "Cabinet",
+          "Vase",
+          "Table"
+        ],
+        "answer": "Photo",
+        "question_type": "plotQA",
+        "_original_index": 2,
+        "_v20_source_flat_index": 13
+      }
+    ]
+  },
+  {
+    "video_id": "movie101_19",
+    "video_path": "data/mlvu/videos/1_plotQA/movie101_19.mp4",
+    "duration": 477,
+    "conversations": [
+      {
+        "question": "How many people are interacting at the staircase?",
+        "choices": [
+          "Four",
+          "Two",
+          "Five",
+          "Three"
+        ],
+        "answer": "Three",
+        "question_type": "plotQA",
+        "_original_index": 1,
+        "_v20_source_flat_index": 16
+      }
+    ]
+  },
+  {
+    "video_id": "surveil_6",
+    "video_path": "data/mlvu/videos/6_anomaly_reco/surveil_6.mp4",
+    "duration": 185.6,
+    "conversations": [
+      {
+        "question": "Are there any irregularities in this surveillance video? if there are, what sort are they?",
+        "choices": [
+          "Shooting",
+          "Normal",
+          "Arson",
+          "Shooting"
+        ],
+        "answer": "Shooting",
+        "question_type": "anomaly_reco",
+        "_original_index": 0,
+        "_v20_source_flat_index": 36
+      }
+    ]
+  },
+  {
+    "video_id": "xiaoliyu_9",
+    "video_path": "data/mlvu/videos/1_plotQA/xiaoliyu_9.mp4",
+    "duration": 302,
+    "conversations": [
+      {
+        "question": "What did the cartoon snake do to the cartoon carp?",
+        "choices": [
+          "Attacked",
+          "Played",
+          "Invited for a meal",
+          "Invited for a drink"
+        ],
+        "answer": "Attacked",
+        "question_type": "plotQA",
+        "_original_index": 1,
+        "_v20_source_flat_index": 40
+      }
+    ]
+  },
+  {
+    "video_id": "surveil_186",
+    "video_path": "data/mlvu/videos/6_anomaly_reco/surveil_186.mp4",
+    "duration": 403.58,
+    "conversations": [
+      {
+        "question": "Is there any abnormality in this surveillance video? if so, what type of abnormality is it?",
+        "choices": [
+          "Abuse",
+          "Arson",
+          "Stealing",
+          "Robbery"
+        ],
+        "answer": "Robbery",
+        "question_type": "anomaly_reco",
+        "_original_index": 0,
+        "_v20_source_flat_index": 9
+      }
+    ]
+  }
+]

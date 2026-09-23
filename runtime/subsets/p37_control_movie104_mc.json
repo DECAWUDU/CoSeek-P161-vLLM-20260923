@@ -1,0 +1,14 @@
+[
+  {
+    "video_id": "movie101_104",
+    "video_path": "data/mlvu/videos/1_plotQA/movie101_104.mp4",
+    "duration": 514,
+    "conversations": [{
+      "question": "Why does the girl with glasses run downstairs in a hurry?",
+      "choices": ["Chasing someone", "Being chased", "To help another girl out of a situation", "To get something"],
+      "answer": "To help another girl out of a situation",
+      "question_type": "plotQA",
+      "_original_index": 0
+    }]
+  }
+]

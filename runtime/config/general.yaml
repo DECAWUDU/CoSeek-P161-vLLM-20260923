@@ -1,0 +1,474 @@
+model_name: "gpt-5"
+coseek_version: "p38_query_coverage_fusion"
+api_base: "OPENAI_API_BASE"
+api_key: "OPENAI_API_KEY"
+api_version: "OPENAI_API_VERSION"
+
+# Optional visual observer model used by overview / skim / focus.
+# Leave empty to reuse the main model endpoint.
+observer_model_name: ""
+observer_api_base: ""
+observer_api_key: ""
+observer_api_version: ""
+observer_reasoning_effort: "low"
+
+# Visual observer backend:
+# - api: use the remote observer model for overview / skim / focus.
+# - local_qwen: use local Qwen for all visual observer tools.
+# - hybrid: use the remote model for overview and local Qwen for local tools.
+observer_backend: "api"
+local_qwen_tools: "focus"
+local_qwen_focus_modes: "option_verify"
+local_qwen_skim_modes: ""
+local_qwen_model_path: "/home/zjw/workspace/Qwen3.5-9B"
+local_qwen_python: "/home/zjw/workspace/.venvs/qwen35-coseek/bin/python"
+local_qwen_persistent_worker: true
+local_qwen_cuda_visible_devices: ""
+local_qwen_device_map: "auto"
+local_qwen_max_memory: ""
+local_qwen_torch_dtype: "bfloat16"
+local_qwen_max_new_tokens: 768
+local_qwen_max_images: 24
+local_qwen_max_image_side: 768
+local_qwen_timeout_s: 900
+local_qwen_no_cpu_offload: true
+local_qwen_fallback_to_api: true
+# CoSeek V20 baseline: Qwen describes frames in plain text; deterministic code
+# attaches timestamps and builds the observation JSON.
+qwen_caption_only_output: true
+
+reasoning_effort: "medium"
+seed: 42
+temperature: 1.0
+max_steps: 20
+max_retries: 8
+max_tokens: 32768
+# P128 experiment switch.  Limits apply to investigation calls; one compact
+# final-answer request remains available so evaluation produces a prediction.
+adaptive_api_token_budget_enabled: false
+adaptive_api_token_soft_limit: 100000
+adaptive_api_token_hard_limit: 150000
+adaptive_api_token_soft_extra_steps: 2
+adaptive_api_token_final_answer_max_tokens: 4096
+# P130 Count/Order-only subtraction path. The named experiment arm enables
+# this switch; all other question types continue through frozen P128.
+p130_minimal_global_fsm_enabled: false
+p130_global_recovery_max_attempts: 2
+p130_global_initial_max_search_windows: 8
+use_evidence_reducer: true
+use_structured_evidence_state: true
+structured_evidence_max_items: 12
+structured_evidence_prompt_max_items: 10
+structured_evidence_answer_max_items: 16
+structured_evidence_include_planner_state: true
+structured_evidence_include_occurrence_view: false
+structured_evidence_include_timeline_view: false
+structured_evidence_include_object_state_view: false
+# Preserve a complete frame-verifier option comparison alongside its raw
+# timestamp rows. Off by default to keep frozen modes byte-for-byte compatible.
+structured_evidence_preserve_aggregate_verifier_decision: false
+# V72 read-only memory projection for explicit multi-event questions. It keeps
+# each event's earliest timestamp anchor separate from its strongest evidence.
+coseek1_compact_event_coverage: true
+coseek1_compact_event_coverage_max_items: 8
+# V73 scheduler: one localize continuation verifies the earliest anchor for
+# each explicit event in one neutral multi-window API call.
+coseek1_event_coverage_inline_verify: true
+coseek1_event_coverage_inline_verify_max_windows: 4
+coseek1_event_coverage_inline_verify_radius_s: 5.0
+# V40 changes only the API-facing message view. Full messages, observations,
+# and evidence memory remain available locally in the trajectory.
+coseek1_compact_planner_context: true
+coseek1_compact_answer_context: true
+# P99 single-variable API projection. The complete P38 memory is still built
+# locally; these switches only replace the memory text sent to the Planner and
+# record a read-only audit. Disabled by default for a byte-identical control.
+coseek1_planner_evidence_capsule_enabled: false
+# P100 deletion-only treatment. When enabled it builds the fitted P99 payload,
+# then removes only option-policy fields and their generic derived obligation.
+# It is disabled by default so both switches off remain the P38 control.
+coseek1_planner_decision_neutral_capsule_enabled: false
+# P105 single-variable controller. Disabled by default so the copied P100
+# runtime remains the exact causal control until a frozen launcher enables it.
+# A valid full-coverage Overview writes a durable receipt; ordinary Overview
+# becomes unavailable afterward and any stale proposal is blocked locally.
+coseek1_valid_overview_receipt_guard_enabled: false
+coseek1_planner_capsule_token_budget: 4000
+coseek1_planner_capsule_max_verified: 8
+coseek1_planner_capsule_max_candidates: 8
+coseek1_planner_capsule_max_obligations: 4
+coseek1_planner_capsule_audit_enabled: true
+# V41 low-risk API reduction. A valid option emitted by the planner is returned
+# locally; malformed/legacy answer actions still fall back to the V40 answer API.
+coseek1_direct_planner_answer: true
+# V41 hierarchical local observation. Existing skim_qwen/focus_qwen remain
+# registered for ablation, while localize_qwen composes both in one Agent step.
+coseek1_localize_qwen_enabled: true
+localize_qwen_top_k: 3
+localize_qwen_max_top_k: 4
+# P124 experiment switches. The P124 runner enables them explicitly so older
+# frozen modes in this runtime retain their original behavior.
+localize_qwen_evidence_preserving_selection_enabled: false
+localize_qwen_ambiguous_reserve: 0
+# V75.1 candidate switches. Disabled by default so the V75 command remains
+# reproducible. The candidate runner enables both explicitly.
+localize_qwen_row_candidate_windows: false
+localize_qwen_cover_search_windows: false
+localize_qwen_max_search_windows: 8
+# P36 tool-integrity repair. Disabled globally so the copied P32 mode remains
+# byte-for-byte reproducible at runtime unless the named P36 mode enables it.
+coseek1_tool_integrity_repair_enabled: false
+coseek1_tool_memory_anchor_margin_s: 2.0
+coseek1_tool_memory_anchors_per_window: 4
+coseek1_tool_memory_anchor_pad_s: 0.25
+# P37 keeps presentation-time packet grouping separate from semantic event
+# identity and reuses anchors discovered inside boundary-expanded windows.
+coseek1_tool_event_identity_repair_enabled: false
+coseek1_tool_recollect_expanded_anchors_enabled: false
+grounded_verify_packet_boundary_context_enabled: false
+localize_qwen_coarse_max_frames: 96
+localize_qwen_fine_max_frames: 24
+localize_qwen_verify_window_s: 12.0
+# Adaptive v2 keeps this disabled by default. A small enabled margin protects
+# event boundaries without widening every localization back to its search span.
+localize_qwen_verify_context_margin_s: 8.0
+# Optional local-observer halo around planner/Overview windows. Disabled by
+# default; unlike verify context, this lets Qwen recover events whose timestamp
+# starts just outside an imprecise Overview candidate.
+localize_qwen_search_context_margin_s: 0.0
+localize_qwen_adaptive_search_context: false
+localize_qwen_normalized_candidate_score_enabled: false
+# P25-L local-observer frontier. All switches remain off outside the named
+# experiment mode so P20/P21 behavior stays reproducible.
+localize_qwen_duration_budget_enabled: false
+localize_qwen_duration_budget_fps: 2.0
+localize_qwen_duration_budget_min_frames: 8
+localize_qwen_duration_budget_max_frames: 32
+localize_qwen_codec_anchor_sampling_enabled: false
+localize_qwen_boundary_expansion_enabled: true
+localize_qwen_boundary_context_margin_s: 8.0
+localize_qwen_boundary_trigger_s: 2.0
+localize_qwen_boundary_expansion_max_frames: 24
+localize_qwen_caption_cache_enabled: false
+localize_qwen_caption_cache_goal_similarity: 0.72
+localize_qwen_caption_cache_coverage_ratio: 0.70
+localize_qwen_candidate_novelty_enabled: false
+localize_qwen_candidate_novelty_overlap: 0.80
+localize_qwen_strict_evidence_status_enabled: false
+localize_qwen_trace_enabled: true
+# V46: continue a successful local localization into one comparative API
+# verification without spending an intermediate remote planner turn.
+coseek1_localize_inline_verify: true
+# P28 keeps localizer language as an untrusted retrieval hint. The original
+# multiple-choice question remains the sole semantic objective for API verify.
+coseek1_retrieval_verify_semantic_decoupling_enabled: false
+localize_inline_verify_max_windows: 4
+localize_inline_verify_max_frames: 24
+localize_inline_verify_batch_enabled: false
+localize_inline_verify_batch_size: 4
+# V75.2 visual layout. Disabled by default; the V75.2 runner packs each
+# candidate's ordered frames into its own timestamped temporal strip.
+localize_inline_verify_contact_sheets: false
+# V75 keeps multi-window verification inside one Agent observation. If the
+# remote verifier omits candidate windows, retry only those missing windows.
+multiwindow_verify_recovery_enabled: true
+multiwindow_verify_recovery_max_calls: 2
+multiwindow_verify_recovery_batch_size: 2
+# P1 spatial preprocessing. It is off by default so this copied runtime can
+# reproduce V75.1. When enabled, local Qwen proposes bbox only and GPT-5 remains
+# the sole source of verified visual facts.
+grounded_frame_verify_enabled: false
+grounded_frame_verify_max_anchors: 1
+grounded_frame_verify_crop_area_threshold: 0.5
+grounded_frame_verify_padding_ratio: 0.18
+grounded_frame_verify_min_crop_side_ratio: 0.12
+grounded_frame_verify_context_short_side: 320
+grounded_frame_verify_max_new_tokens: 160
+grounded_frame_verify_cache_enabled: true
+grounded_frame_verify_cache_dir: ""
+# P3 candidate verification packets. Local Qwen proposes one high-recall
+# detail region per candidate; the remote verifier receives one low-resolution
+# temporal strip plus either that crop or one bounded full-frame anchor.
+grounded_high_recall_proposal_enabled: false
+grounded_verify_packet_enabled: false
+grounded_verify_packet_anchors_per_candidate: 2
+# Keep the fixed high-resolution tile budget, but distribute detail anchors
+# across the localizer's evidence span instead of always taking its first rows.
+grounded_verify_packet_temporal_anchor_spread_enabled: false
+# P29 reuses the same two high-resolution tiles as one query peak and one
+# visually distinct event/scene context anchor. It never grows the image budget.
+grounded_verify_packet_query_context_roles_enabled: false
+# P21 verifier semantics. The remote verifier already receives multiple
+# timestamped detail anchors per candidate; audit each anchor before reducing
+# them to one candidate-level fact. This changes neither image nor API budget.
+grounded_verify_packet_anchor_audit_enabled: false
+grounded_verify_packet_crop_max_side: 768
+grounded_verify_packet_peak_max_side: 960
+# P4-adaptive: the packet verifier may request one local crop only when one
+# candidate is already bound and a small visual detail remains unresolved.
+packet_detail_grounding_escalation_enabled: false
+packet_detail_grounding_escalation_frames: 6
+# Adaptive v2 separates the kind of missing evidence from answer confidence.
+packet_adaptive_evidence_need_enabled: false
+packet_detail_grounding_direct_escalation_enabled: false
+# P4 direct-window packet. Preserve all sampled timestamps in ordered temporal
+# sheets, then add a small high-resolution detail sheet for final inspection.
+# Disabled by default so P3 and the frozen baseline remain reproducible.
+grounded_direct_verify_packet_enabled: false
+grounded_direct_verify_packet_group_size: 4
+grounded_direct_verify_packet_anchor_count: 2
+grounded_direct_verify_packet_detail_max_side: 960
+# P2 candidate-specific target binding. The remote verifier compares all local
+# candidates in one request and writes separate match/mismatch facts to memory.
+# This is an observation representation feature, not an answer gate.
+grounded_candidate_binding_enabled: false
+# Robust Adaptive experiment: distinguish the exact queried event instance
+# from a same-entity observation in another episode. Off for reproducibility.
+grounded_candidate_event_binding_enabled: false
+grounded_candidate_event_binding_force_enabled: false
+grounded_candidate_event_group_max_gap_s: 24.0
+# Repair only a self-contradictory verifier result: one supported option, all
+# competitors contradicted, matched scope, and no remaining evidence gap.
+packet_decision_consistency_normalization_enabled: false
+# Distinguish complete A-D discrimination over multiple verified windows from
+# optional residual visual detail. Disabled by default for reproducibility.
+packet_multiwindow_decision_sufficiency_enabled: false
+# P30 keeps a verifier's unique candidate-set decision separate from
+# per-candidate event bindings and restores it only when every candidate is
+# resolved and conflict-free. This changes evidence reduction, not routing.
+packet_preserve_resolved_candidate_set_decision_enabled: false
+# V34 keeps the V33 planner autonomous while fixing memory semantics.
+coseek1_scope_aware_evidence_memory: true
+coseek1_separate_routing_candidates: true
+coseek1_persistent_open_gaps: true
+# Adaptive v2 memory semantics. These are planner-facing state corrections,
+# not hard answer gates or question-type routes.
+coseek1_semantic_gap_resolution_enabled: false
+coseek1_observer_conflict_memory_enabled: false
+coseek1_query_relevant_memory_retention: true
+# V36: merge Overview scene summaries and query-relevant timestamp cues into
+# one stable planner-facing pool. This changes memory representation only.
+coseek1_persistent_candidate_pool: true
+coseek1_persistent_candidate_pool_max_items: 20
+coseek1_persistent_candidate_pool_timestamp_radius_s: 8.0
+# Adaptive Robust V2 candidate projection. Keep representative timestamped
+# facts inside each Overview scene and compact redundant next-search targets.
+# This changes planner-visible memory only; it does not route tools or gate answers.
+coseek1_candidate_evidence_projection: false
+# P21 read-only projection over verified temporal evidence. It preserves
+# distinct event spans and reports repeated verification without routing or
+# answer gates. The named P21 runner mode enables these switches.
+coseek1_temporal_evidence_ledger_enabled: true
+coseek1_temporal_evidence_ledger_max_events: 16
+# P125 preserves locally verified candidate facts even when a separate batch
+# cannot answer the whole-video question, then exposes canonical ledger events
+# to the decision-neutral planner capsule. Disabled outside the P125 arm.
+p125_per_candidate_direct_evidence_enabled: false
+p125_ledger_capsule_bridge_enabled: false
+# P127 prevents aggregate batch sufficiency from promoting negative, ambiguous,
+# or context-only timestamps. Only the assessment's best matched/direct anchor
+# may become verified.
+p127_strict_per_anchor_evidence_enabled: false
+p127_ambiguous_mandatory_detail_recovery_enabled: false
+coseek1_verified_observation_reuse_enabled: false
+coseek1_verified_observation_reuse_overlap: 0.92
+coseek1_verified_observation_reuse_query_similarity: 0.55
+focus_qwen_multi_window_enabled: true
+focus_qwen_multi_window_max_windows: 4
+direct_answer_from_letter_thought: true
+extract_explicit_thought_action: true
+prefer_explicit_thought_action: true
+require_scene_skim_before_focus: false
+pre_focus_skim_context_s: 10.0
+pre_focus_skim_max_window_s: 45.0
+qwen_first_observer: false
+qwen_first_skim: false
+qwen_first_focus: false
+qwen_first_skim_modes: "normal,option_coverage,alternative_window"
+qwen_first_focus_modes: "detail_verify,option_verify,wider_context"
+qwen_first_skim_max_window_s: 90.0
+qwen_first_focus_max_window_s: 20.0
+qwen_first_verify_uncertain_skim: false
+qwen_first_verify_uncertain_focus: false
+qwen_first_verify_parse_error: true
+qwen_first_repeat_window_escalates_to_api: true
+qwen_first_skim_api_relevance_threshold: 0.2
+query_aware_scene_probe: false
+query_aware_scene_probe_max_per_question: 2
+query_aware_scene_probe_max_window_s: 90.0
+query_aware_scene_probe_prefer_scene_range: true
+query_aware_scene_probe_api_verify: true
+query_aware_scene_probe_api_relevance_threshold: 0.3
+query_aware_scene_probe_single_images: true
+query_aware_scene_probe_short_side: 448
+query_aware_scene_probe_max_frames: 8
+query_aware_scene_probe_max_new_tokens: 512
+
+frame_sampling_factor: 4
+overview_base: 16
+overview_require_all_timestamps: true
+overview_fill_omitted_timestamps: true
+overview_frame_caption_words: 50
+overview_frame_short_side: 320
+overview_embed_timestamp_labels: true
+overview_contact_sheet_group_size: 4
+# P32 keeps P31's concurrent local recall scan, but retains a larger internal
+# caption pool and uses remote positive scenes as query-semantic prototypes.
+# Only a compact set of routing candidates reaches planner memory.
+dual_path_overview_enabled: false
+dual_path_overview_shadow_only: true
+dual_path_overview_trace_enabled: true
+dual_path_integration_mode: "selective"
+dual_path_local_frames: 0
+dual_path_local_min_frames: 32
+dual_path_local_max_frames: 48
+dual_path_local_target_interval_s: 12.0
+dual_path_local_batch_size: 8
+dual_path_local_min_processed_frames: 0
+dual_path_local_top_k: 4
+dual_path_local_candidate_pool_k: 0
+dual_path_fused_top_k: 2
+dual_path_semantic_prototype_ranking_enabled: false
+dual_path_choice_aware_retrieval_enabled: false
+dual_path_query_target_reserve_enabled: false
+dual_path_planner_caption_limit: 0
+dual_path_local_deadline_s: 180.0
+dual_path_local_batch_timeout_s: 120
+dual_path_local_caption_words: 15
+dual_path_local_max_new_tokens: 768
+dual_path_local_frame_short_side: 384
+dual_path_candidate_window_s: 12.0
+dual_path_remote_exclusion_s: 0.75
+dual_path_local_min_gap_s: 1.0
+dual_path_remote_dedup_overlap: 0.35
+# hybrid: 1/3 uniform + 1/3 I-frame + 1/3 packet-size motion peaks.
+# iframes: all overview samples come from codec I-frames when available.
+overview_sampling_mode: "hybrid"
+skim_base: 4
+focus_base: 4
+focus_context_pad_s: 5.0
+focus_qwen_max_frames: 8
+focus_qwen_temporal_density_enabled: false
+focus_qwen_target_fps: 1.0
+focus_qwen_context_pad_s: 2.0
+focus_qwen_max_window_s: 20.0
+focus_qwen_short_side: 320
+focus_qwen_max_new_tokens: 1536
+focus_qwen_fallback_to_api: false
+focus_qwen_frame_caption_words: 24
+focus_qwen_summary_words: 16
+skim_long_window_s: 120.0
+skim_long_num_frames: 48
+skim_long_target_step_s: 6.0
+skim_qwen_dynamic_frame_budget: true
+skim_qwen_short_window_frames: 8
+skim_qwen_mid_window_frames: 12
+skim_qwen_long_window_frames: 16
+skim_qwen_max_frames: 16
+# V20 experiment switches. The frozen baseline keeps both disabled.
+# Density sampling uses temporal rate rather than a fixed frame count. Observer
+# micro-batches bound GPU memory without changing temporal coverage.
+skim_qwen_temporal_density_enabled: true
+skim_qwen_target_fps: 1.0
+skim_qwen_adaptive_density_enabled: true
+skim_qwen_density_short_limit_s: 15.0
+skim_qwen_density_mid_limit_s: 30.0
+skim_qwen_density_short_fps: 1.0
+skim_qwen_density_mid_fps: 0.75
+skim_qwen_density_long_fps: 0.5
+skim_qwen_density_batch_frames: 8
+skim_qwen_density_max_frames: 48
+skim_qwen_single_images: true
+skim_qwen_short_side: 320
+skim_qwen_max_new_tokens: 768
+skim_qwen_recovery_max_frames: 24
+skim_qwen_recovery_max_new_tokens: 1200
+skim_qwen_recovery_candidate_window_s: 28.0
+skim_qwen_recovery_max_candidate_windows: 6
+skim_qwen_recommended_max_window_s: 90.0
+skim_qwen_fallback_to_api: false
+skim_qwen_frame_caption_words: 15
+skim_qwen_relevant_detail_words: 0
+skim_qwen_window_summary_words: 12
+skim_qwen_auto_focus_windows: true
+skim_qwen_candidate_window_s: 18.0
+skim_qwen_max_candidate_windows: 4
+
+# V10.1 skeleton overview. Keep disabled by default until validated.
+use_skeleton_overview: false
+scene_aware_skim: true
+skeleton_cache_dir: "./runs/_skeleton_cache"
+skeleton_scene_min_s: 12.0
+skeleton_scene_max_s: 90.0
+skeleton_max_scenes: 24
+skeleton_anchors_per_scene: 5
+skeleton_caption_enabled: true
+skeleton_caption_strategy: "contact_sheet"
+skeleton_caption_frames: 48
+skeleton_caption_frames_per_scene: 4
+skeleton_caption_scenes_per_chunk: 7
+skeleton_caption_retries: 2
+skeleton_caption_retry_failed_cache: false
+skeleton_caption_short_side: 224
+skeleton_single_frame_short_side: 384
+skeleton_single_frame_aggregate: true
+skeleton_mini_sheet_group_size: 4
+skeleton_mini_sheet_short_side: 384
+skeleton_overview_max_scenes: 30
+
+coseek1_structured_planner: true
+coseek1_planner_json_action: true
+coseek1_defer_insufficient_answer: false
+coseek1_requirement_coverage: true
+coseek1_defer_partial_requirement_answer: false
+coseek1_requirement_candidate_max_window_s: 24.0
+coseek1_requirement_recovery_unsplit_skim: true
+coseek1_requirement_recovery_max_window_s: 90.0
+coseek1_focus_before_frame_verify: false
+coseek1_focus_before_frame_verify_min_remaining_steps: 2
+coseek1_focus_before_frame_verify_overlap: 0.5
+coseek1_focus_before_frame_verify_min_window_s: 0.0
+coseek1_long_frame_verify_to_skim_qwen: false
+coseek1_candidate_search_manager: false
+coseek1_candidate_search_max_focus_before_verify: 4
+coseek1_candidate_search_overlap: 0.5
+coseek1_candidate_search_max_candidates: 6
+coseek1_candidate_search_split_stride_ratio: 0.5
+coseek1_candidate_search_uncertain_text_route: true
+coseek1_candidate_search_allow_short_frame_verify_direct: true
+# When enabled, an unchanged skim revisit must pursue a new candidate window,
+# a different overview scene, or reuse the existing observation instead of
+# spending another local-Qwen call on identical frames.
+coseek1_visited_window_information_gain: false
+coseek1_visited_window_overlap: 0.85
+coseek1_candidate_frontier: false
+coseek1_candidate_frontier_max_items: 16
+# V30 frontier-v2 representation switches. These only change planner-visible
+# memory; they do not route tools or block answer actions.
+coseek1_frontier_timestamp_cues: true
+coseek1_frontier_timestamp_cue_radius_s: 6.0
+coseek1_frontier_evidence_scope: true
+coseek1_frontier_temporal_boundaries: false
+coseek1_frontier_temporal_boundary_max_gap_s: 20.0
+# V30 investigation-frontier experiment. This adds planner-visible bindings
+# between open candidates and unresolved evidence; it never rewrites actions.
+coseek1_frontier_investigation_state: false
+coseek1_frontier_investigation_max_items: 12
+coseek1_intent_preserving_router: true
+coseek1_intent_preserving_same_range_overlap: 0.85
+coseek1_preserve_planner_thought: true
+# Adaptive V2: when a short planner verify is only one slice of an Overview
+# candidate with overlapping boundary windows, preserve that local context in
+# one Qwen localization + inline verification step. This is disabled by
+# default so frozen runners remain reproducible.
+coseek1_candidate_context_localize_enabled: false
+# V33 ablates the V31 episode graph. Timestamped Observation Memory and the
+# V14 Structured Evidence State remain the only persistent evidence layers.
+coseek1_evidence_episode_frontier: false
+coseek1_evidence_episode_max_items: 18
+coseek1_episode_anchor_radius_s: 6.0
+coseek1_episode_focus_window_s: 20.0
+coseek1_episode_broad_window_s: 30.0
+coseek1_episode_backend_router: false
+coseek1_answer_evidence_audit: false
+tools: ["overview", "localize_qwen", "frame_verify"]

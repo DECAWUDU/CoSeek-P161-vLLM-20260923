@@ -1,0 +1,47 @@
+[
+  {
+    "video_id": "xiaoliyu_9",
+    "video_path": "data/mlvu/videos/1_plotQA/xiaoliyu_9.mp4",
+    "duration": 302,
+    "conversations": [
+      {
+        "question": "What did the cartoon snake do to the cartoon carp?",
+        "choices": ["Attacked", "Played", "Invited for a meal", "Invited for a drink"],
+        "answer": "Attacked",
+        "question_type": "plotQA",
+        "_original_index": 1,
+        "_v20_source_flat_index": 40
+      }
+    ]
+  },
+  {
+    "video_id": "needle_18",
+    "video_path": "data/mlvu/videos/2_needle/needle_18.mp4",
+    "duration": 494.0,
+    "conversations": [
+      {
+        "question": "Where are the people tourists walking?",
+        "choices": ["In a city", "In a forest", "On the embankment in a fishing village", "On a beach"],
+        "answer": "On the embankment in a fishing village",
+        "question_type": "findNeedle",
+        "_original_index": 0,
+        "_v20_source_flat_index": 45
+      }
+    ]
+  },
+  {
+    "video_id": "ego_41",
+    "video_path": "data/mlvu/videos/3_ego/ego_41.mp4",
+    "duration": 480.0333333333333,
+    "conversations": [
+      {
+        "question": "What did i put on the shelf?",
+        "choices": ["Book", "Cup", "Pencil", "Spray"],
+        "answer": "Spray",
+        "question_type": "ego",
+        "_original_index": 0,
+        "_v20_source_flat_index": 49
+      }
+    ]
+  }
+]

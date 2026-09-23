@@ -1,0 +1,16 @@
+[
+  {
+    "video_id": "movie101_19",
+    "video_path": "data/mlvu/videos/1_plotQA/movie101_19.mp4",
+    "duration": 477,
+    "conversations": [
+      {
+        "question": "How many people are interacting at the staircase?",
+        "choices": ["Four", "Two", "Five", "Three"],
+        "answer": "Three",
+        "question_type": "plotQA",
+        "_original_index": 1
+      }
+    ]
+  }
+]

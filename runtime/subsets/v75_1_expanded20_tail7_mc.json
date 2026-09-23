@@ -1,0 +1,142 @@
+[
+  {
+    "video_id": "movie101_104",
+    "video_path": "data/mlvu/videos/1_plotQA/movie101_104.mp4",
+    "duration": 514,
+    "conversations": [
+      {
+        "question": "What is the girl's reaction after the phone call at the beginning of the video?",
+        "choices": [
+          "Angry",
+          "She walks on the road with a blank stare",
+          "Joyful",
+          "Happy"
+        ],
+        "answer": "She walks on the road with a blank stare",
+        "question_type": "plotQA",
+        "_original_index": 1,
+        "_v75_1_eval_flat_index": 26
+      }
+    ]
+  },
+  {
+    "video_id": "needle_72",
+    "video_path": "data/mlvu/videos/2_needle/needle_72.mp4",
+    "duration": 471.08,
+    "conversations": [
+      {
+        "question": "What is the woman doing in the flower shop?",
+        "choices": [
+          "Cleaning the shop",
+          "Arranging books",
+          "Watering the plants",
+          "Making a bouquet of fresh flowers"
+        ],
+        "answer": "Making a bouquet of fresh flowers",
+        "question_type": "findNeedle",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 28
+      }
+    ]
+  },
+  {
+    "video_id": "en_tv_11",
+    "video_path": "data/mlvu/videos/1_plotQA/en_tv_11.mp4",
+    "duration": 465,
+    "conversations": [
+      {
+        "question": "Why are the woman in blue clothing and the man with a scar on his face surrounded by armed personnel?",
+        "choices": [
+          "Because they had a fight",
+          "Because they killed someone",
+          "Because they triggered the alarm device",
+          "Because they robbed"
+        ],
+        "answer": "Because they triggered the alarm device",
+        "question_type": "plotQA",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 29
+      }
+    ]
+  },
+  {
+    "video_id": "order_4",
+    "video_path": "data/mlvu/videos/5_order/order_4.mp4",
+    "duration": 708.4100000000001,
+    "conversations": [
+      {
+        "question": "Arrange the following events from the video in the correct chronological order: (1)the group begins to dance in unison; (2)some of the group are on their feet; (3)a group gathers to the center of a gym floor; (4)some are in wheel chairs.",
+        "choices": [
+          "1->2->3->4",
+          "2->3->1->4",
+          "4->3->2->1",
+          "3->1->2->4"
+        ],
+        "answer": "3->1->2->4",
+        "question_type": "order",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 37
+      }
+    ]
+  },
+  {
+    "video_id": "surveil_172",
+    "video_path": "data/mlvu/videos/6_anomaly_reco/surveil_172.mp4",
+    "duration": 321.85,
+    "conversations": [
+      {
+        "question": "Is there any abnormality in this surveillance video? if so, what type of abnormality is it?",
+        "choices": [
+          "Arson",
+          "Abuse",
+          "Fighting",
+          "Robbery"
+        ],
+        "answer": "Robbery",
+        "question_type": "anomaly_reco",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 38
+      }
+    ]
+  },
+  {
+    "video_id": "surveil_25",
+    "video_path": "data/mlvu/videos/6_anomaly_reco/surveil_25.mp4",
+    "duration": 195.06,
+    "conversations": [
+      {
+        "question": "Are there any irregularities in this surveillance video? if there are, what sort are they?",
+        "choices": [
+          "Burglary",
+          "Stealing",
+          "Robbery",
+          "Assault"
+        ],
+        "answer": "Stealing",
+        "question_type": "anomaly_reco",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 42
+      }
+    ]
+  },
+  {
+    "video_id": "order_288",
+    "video_path": "data/mlvu/videos/5_order/order_288.mp4",
+    "duration": 511.25,
+    "conversations": [
+      {
+        "question": "Please identify the option that corresponds to the order of events as they occur in the video.",
+        "choices": [
+          "water sliding --> making jewelry --> abseiling --> javelin throw",
+          "abseiling --> water sliding --> javelin throw --> making jewelry",
+          "javelin throw --> water sliding --> abseiling --> making jewelry",
+          "water sliding --> javelin throw --> abseiling --> making jewelry"
+        ],
+        "answer": "javelin throw --> water sliding --> abseiling --> making jewelry",
+        "question_type": "order",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 48
+      }
+    ]
+  }
+]

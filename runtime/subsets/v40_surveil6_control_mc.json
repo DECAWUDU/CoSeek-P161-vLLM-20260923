@@ -1,0 +1,16 @@
+[
+  {
+    "video_id": "surveil_6",
+    "video_path": "data/mlvu/videos/6_anomaly_reco/surveil_6.mp4",
+    "duration": 185.6,
+    "conversations": [
+      {
+        "question": "Are there any irregularities in this surveillance video? if there are, what sort are they?",
+        "choices": ["Shooting", "Normal", "Arson", "Shooting"],
+        "answer": "Shooting",
+        "question_type": "anomaly_reco",
+        "_original_index": 36
+      }
+    ]
+  }
+]

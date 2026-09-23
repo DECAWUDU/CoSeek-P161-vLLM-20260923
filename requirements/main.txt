@@ -1,0 +1,8 @@
+decord==0.6.0
+numpy==2.5.2
+pillow==12.3.0
+openai==2.54.0
+httpx==0.28.1
+litellm==1.97.0
+tiktoken==0.13.0
+PyYAML==6.0.3

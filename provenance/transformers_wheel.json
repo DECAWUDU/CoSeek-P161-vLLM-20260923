@@ -1,0 +1,7 @@
+{
+  "version": "5.14.0.dev0",
+  "source_commit": "01dd2fd817a51a67eeb9126233faf9cbb380a17c",
+  "source_url": "https://github.com/huggingface/transformers",
+  "packaging": "Repacked installed pure-Python library and original dist-info; regenerated wheel RECORD; no source modifications.",
+  "sha256": "280e18ae865e6ac62b245ac0ab6625597d7255f184f16dfd72a896ba9225a98a"
+}

@@ -1,0 +1,95 @@
+[
+  {
+    "video_id": "ego_74",
+    "video_path": "data/mlvu/videos/3_ego/ego_74.mp4",
+    "duration": 480.0,
+    "conversations": [
+      {
+        "question": "In what location did i last see the cat?",
+        "choices": [
+          "in the backyard",
+          "in the kitchen",
+          "in the living room",
+          "in the storage room"
+        ],
+        "answer": "in the storage room",
+        "question_type": "ego",
+        "_original_index": 0,
+        "_v20_source_flat_index": 19
+      },
+      {
+        "question": "How many picture frames were on the wall in the living room?",
+        "choices": [
+          "3",
+          "1",
+          "2",
+          "4"
+        ],
+        "answer": "2",
+        "question_type": "ego",
+        "_original_index": 3,
+        "_v20_source_flat_index": 22
+      }
+    ]
+  },
+  {
+    "video_id": "order_53",
+    "video_path": "data/mlvu/videos/5_order/order_53.mp4",
+    "duration": 665.78,
+    "conversations": [
+      {
+        "question": "Arrange the following events from the video in the correct chronological order: (1)a guy sits and talks inside; (2)a man surfs on a body of water; (3)a lady spins on skates; (4)the credits of the video are shown.",
+        "choices": [
+          "1->2->3->4",
+          "2->1->3->4",
+          "4->3->2->1",
+          "3->2->1->4"
+        ],
+        "answer": "1->2->3->4",
+        "question_type": "order",
+        "_original_index": 0,
+        "_v20_source_flat_index": 23
+      }
+    ]
+  },
+  {
+    "video_id": "count_138",
+    "video_path": "data/mlvu/videos/4_count/count_138.mp4",
+    "duration": 500.18,
+    "conversations": [
+      {
+        "question": "In this video, how many times does the scene of the 'making jewelry' action appear in total?",
+        "choices": [
+          "4",
+          "5",
+          "2",
+          "6"
+        ],
+        "answer": "5",
+        "question_type": "count",
+        "_original_index": 0,
+        "_v20_source_flat_index": 43
+      }
+    ]
+  },
+  {
+    "video_id": "ego_41",
+    "video_path": "data/mlvu/videos/3_ego/ego_41.mp4",
+    "duration": 480.0333333333333,
+    "conversations": [
+      {
+        "question": "What did i put on the shelf?",
+        "choices": [
+          "Book",
+          "Cup",
+          "Pencil",
+          "Spray"
+        ],
+        "answer": "Spray",
+        "question_type": "ego",
+        "_original_index": 0,
+        "_v20_source_flat_index": 49
+      }
+    ]
+  }
+]

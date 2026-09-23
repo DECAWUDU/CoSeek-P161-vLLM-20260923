@@ -1,0 +1,208 @@
+[
+  {
+    "video_id": "en_tv_1",
+    "video_path": "data/mlvu/videos/7_topic_reasoning/en_tv_1.mp4",
+    "duration": 514,
+    "conversations": [
+      {
+        "question": "Who is the main character shown in the video?",
+        "choices": [
+          "A man in a red coat",
+          "A woman in a green coat",
+          "A woman in a blue coat",
+          "A woman in a red coat"
+        ],
+        "answer": "A woman in a red coat",
+        "question_type": "topic_reasoning",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 33
+      }
+    ]
+  },
+  {
+    "video_id": "needle_113",
+    "video_path": "data/mlvu/videos/2_needle/needle_113.mp4",
+    "duration": 5604.42,
+    "conversations": [
+      {
+        "question": "What are the volunteers searching for during the simulation drill?",
+        "choices": [
+          "Survivors of a natural disaster",
+          "Rocket attack casualties",
+          "Hidden treasure",
+          "Lost items"
+        ],
+        "answer": "Rocket attack casualties",
+        "question_type": "findNeedle",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 34
+      }
+    ]
+  },
+  {
+    "video_id": "count_5",
+    "video_path": "data/mlvu/videos/4_count/count_5.mp4",
+    "duration": 479.6,
+    "conversations": [
+      {
+        "question": "In this video, how many times does the scene of the 'abseiling' action appear in total?",
+        "choices": [
+          "3",
+          "0",
+          "4",
+          "2"
+        ],
+        "answer": "3",
+        "question_type": "count",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 35
+      }
+    ]
+  },
+  {
+    "video_id": "xiaoliyu_9",
+    "video_path": "data/mlvu/videos/1_plotQA/xiaoliyu_9.mp4",
+    "duration": 302,
+    "conversations": [
+      {
+        "question": "What expression did the school of fish in the cage show when they saw the cartoon snake?",
+        "choices": [
+          "Surprised",
+          "Happy",
+          "Sad",
+          "Angry"
+        ],
+        "answer": "Surprised",
+        "question_type": "plotQA",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 39
+      },
+      {
+        "question": "What did the cartoon snake do to the cartoon carp?",
+        "choices": [
+          "Attacked",
+          "Played",
+          "Invited for a meal",
+          "Invited for a drink"
+        ],
+        "answer": "Attacked",
+        "question_type": "plotQA",
+        "_original_index": 1,
+        "_v75_1_eval_flat_index": 40
+      },
+      {
+        "question": "What did the cartoon lobster do to the unconscious cartoon turtle?",
+        "choices": [
+          "Treated",
+          "Kicked away",
+          "Helped up",
+          "Attacked"
+        ],
+        "answer": "Kicked away",
+        "question_type": "plotQA",
+        "_original_index": 2,
+        "_v75_1_eval_flat_index": 41
+      }
+    ]
+  },
+  {
+    "video_id": "count_138",
+    "video_path": "data/mlvu/videos/4_count/count_138.mp4",
+    "duration": 500.18,
+    "conversations": [
+      {
+        "question": "In this video, how many times does the scene of the 'making jewelry' action appear in total?",
+        "choices": [
+          "4",
+          "5",
+          "2",
+          "6"
+        ],
+        "answer": "5",
+        "question_type": "count",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 43
+      }
+    ]
+  },
+  {
+    "video_id": "count_105",
+    "video_path": "data/mlvu/videos/4_count/count_105.mp4",
+    "duration": 460.01,
+    "conversations": [
+      {
+        "question": "Throughout this video, what is the total count of occurrences for the scene featuring the 'carving pumpkin' action",
+        "choices": [
+          "5",
+          "6",
+          "3",
+          "1"
+        ],
+        "answer": "1",
+        "question_type": "count",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 44
+      }
+    ]
+  },
+  {
+    "video_id": "needle_18",
+    "video_path": "data/mlvu/videos/2_needle/needle_18.mp4",
+    "duration": 494.0,
+    "conversations": [
+      {
+        "question": "Where are the people tourists walking?",
+        "choices": [
+          "In a city",
+          "In a forest",
+          "On the embankment in a fishing village",
+          "On a beach"
+        ],
+        "answer": "On the embankment in a fishing village",
+        "question_type": "findNeedle",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 45
+      }
+    ]
+  },
+  {
+    "video_id": "movie101_89",
+    "video_path": "data/mlvu/videos/7_topic_reasoning/movie101_89.mp4",
+    "duration": 677,
+    "conversations": [
+      {
+        "question": "What type of film is this?",
+        "choices": [
+          "Comedy",
+          "Mystery",
+          "Action",
+          "Documentary"
+        ],
+        "answer": "Documentary",
+        "question_type": "topic_reasoning",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 47
+      }
+    ]
+  },
+  {
+    "video_id": "ego_41",
+    "video_path": "data/mlvu/videos/3_ego/ego_41.mp4",
+    "duration": 480.0333333333333,
+    "conversations": [
+      {
+        "question": "What did i put on the shelf?",
+        "choices": [
+          "Book",
+          "Cup",
+          "Pencil",
+          "Spray"
+        ],
+        "answer": "Spray",
+        "question_type": "ego",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 49
+      }
+    ]
+  }
+]

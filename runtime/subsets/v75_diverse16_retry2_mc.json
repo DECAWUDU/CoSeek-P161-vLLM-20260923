@@ -1,0 +1,37 @@
+[
+  {
+    "video_id": "surveil_186",
+    "video_path": "data/mlvu/videos/6_anomaly_reco/surveil_186.mp4",
+    "duration": 403.58,
+    "conversations": [
+      {
+        "question": "Is there any abnormality in this surveillance video? if so, what type of abnormality is it?",
+        "choices": ["Abuse", "Arson", "Stealing", "Robbery"],
+        "answer": "Robbery",
+        "question_type": "anomaly_reco",
+        "_original_index": 0,
+        "_v20_source_flat_index": 9
+      }
+    ]
+  },
+  {
+    "video_id": "order_250",
+    "video_path": "data/mlvu/videos/5_order/order_250.mp4",
+    "duration": 490.03,
+    "conversations": [
+      {
+        "question": "Can you tell me which option represents the actual order of actions shown in the video?",
+        "choices": [
+          "pole vault --> baking cookies --> tossing coin --> abseiling",
+          "tossing coin --> pole vault --> baking cookies --> abseiling",
+          "baking cookies --> tossing coin --> pole vault --> abseiling",
+          "baking cookies --> abseiling --> tossing coin --> pole vault"
+        ],
+        "answer": "baking cookies --> tossing coin --> pole vault --> abseiling",
+        "question_type": "order",
+        "_original_index": 0,
+        "_v20_source_flat_index": 32
+      }
+    ]
+  }
+]

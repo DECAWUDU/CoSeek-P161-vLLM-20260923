@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+auth.json
+.codex/
+.venv/
+.venvs/
+__pycache__/
+*.pyc
+runs/
+*.log
+.DS_Store

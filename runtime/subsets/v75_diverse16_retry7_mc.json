@@ -1,0 +1,112 @@
+[
+  {
+    "video_id": "movie101_19",
+    "video_path": "data/mlvu/videos/1_plotQA/movie101_19.mp4",
+    "duration": 477,
+    "conversations": [
+      {
+        "question": "How many people are interacting at the staircase?",
+        "choices": ["Four", "Two", "Five", "Three"],
+        "answer": "Three",
+        "question_type": "plotQA",
+        "_original_index": 1,
+        "_v20_source_flat_index": 16
+      }
+    ]
+  },
+  {
+    "video_id": "count_170",
+    "video_path": "data/mlvu/videos/4_count/count_170.mp4",
+    "duration": 500.11999999999995,
+    "conversations": [
+      {
+        "question": "Throughout this video, what is the total count of occurrences for the scene featuring the 'zumba' action",
+        "choices": ["5", "4", "1", "2"],
+        "answer": "5",
+        "question_type": "count",
+        "_original_index": 0,
+        "_v20_source_flat_index": 10
+      }
+    ]
+  },
+  {
+    "video_id": "count_138",
+    "video_path": "data/mlvu/videos/4_count/count_138.mp4",
+    "duration": 500.18,
+    "conversations": [
+      {
+        "question": "In this video, how many times does the scene of the 'making jewelry' action appear in total?",
+        "choices": ["4", "5", "2", "6"],
+        "answer": "5",
+        "question_type": "count",
+        "_original_index": 0,
+        "_v20_source_flat_index": 43
+      }
+    ]
+  },
+  {
+    "video_id": "surveil_6",
+    "video_path": "data/mlvu/videos/6_anomaly_reco/surveil_6.mp4",
+    "duration": 185.6,
+    "conversations": [
+      {
+        "question": "Are there any irregularities in this surveillance video? if there are, what sort are they?",
+        "choices": ["Shooting", "Normal", "Arson", "Shooting"],
+        "answer": "Shooting",
+        "question_type": "anomaly_reco",
+        "_original_index": 0,
+        "_v20_source_flat_index": 36
+      }
+    ]
+  },
+  {
+    "video_id": "ego_41",
+    "video_path": "data/mlvu/videos/3_ego/ego_41.mp4",
+    "duration": 480.0333333333333,
+    "conversations": [
+      {
+        "question": "What did i put on the shelf?",
+        "choices": ["Book", "Cup", "Pencil", "Spray"],
+        "answer": "Spray",
+        "question_type": "ego",
+        "_original_index": 0,
+        "_v20_source_flat_index": 49
+      }
+    ]
+  },
+  {
+    "video_id": "surveil_186",
+    "video_path": "data/mlvu/videos/6_anomaly_reco/surveil_186.mp4",
+    "duration": 403.58,
+    "conversations": [
+      {
+        "question": "Is there any abnormality in this surveillance video? if so, what type of abnormality is it?",
+        "choices": ["Abuse", "Arson", "Stealing", "Robbery"],
+        "answer": "Robbery",
+        "question_type": "anomaly_reco",
+        "_original_index": 0,
+        "_v20_source_flat_index": 9
+      }
+    ]
+  },
+  {
+    "video_id": "order_250",
+    "video_path": "data/mlvu/videos/5_order/order_250.mp4",
+    "duration": 490.03,
+    "conversations": [
+      {
+        "question": "Can you tell me which option represents the actual order of actions shown in the video?",
+        "choices": [
+          "pole vault --> baking cookies --> tossing coin --> abseiling",
+          "tossing coin --> pole vault --> baking cookies --> abseiling",
+          "baking cookies --> tossing coin --> pole vault --> abseiling",
+          "baking cookies --> abseiling --> tossing coin --> pole vault"
+        ],
+        "answer": "baking cookies --> tossing coin --> pole vault --> abseiling",
+        "question_type": "order",
+        "_original_index": 0,
+        "_v20_source_flat_index": 32
+      }
+    ]
+  }
+]

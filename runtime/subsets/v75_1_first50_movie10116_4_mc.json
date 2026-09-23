@@ -1,0 +1,61 @@
+[
+  {
+    "video_id": "movie101_16",
+    "video_path": "data/mlvu/videos/1_plotQA/movie101_16.mp4",
+    "duration": 740,
+    "conversations": [
+      {
+        "question": "What color is the sweater worn by the man at the beginning of the video?",
+        "choices": [
+          "Red",
+          "Blue",
+          "Yellow",
+          "White"
+        ],
+        "answer": "Red",
+        "question_type": "plotQA",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 0
+      },
+      {
+        "question": "What kind of animals are being kept in the video?",
+        "choices": [
+          "Sheep",
+          "Dog",
+          "Cat",
+          "Pig"
+        ],
+        "answer": "Sheep",
+        "question_type": "plotQA",
+        "_original_index": 1,
+        "_v75_1_eval_flat_index": 1
+      },
+      {
+        "question": "What color is the water bottle on the table in the video?",
+        "choices": [
+          "White",
+          "Yellow",
+          "Blue",
+          "Green"
+        ],
+        "answer": "Green",
+        "question_type": "plotQA",
+        "_original_index": 2,
+        "_v75_1_eval_flat_index": 2
+      },
+      {
+        "question": "What color is the table in the scene where one person gives money to another at the end of the video?",
+        "choices": [
+          "White",
+          "Blue",
+          "Green",
+          "Yellow"
+        ],
+        "answer": "Blue",
+        "question_type": "plotQA",
+        "_original_index": 3,
+        "_v75_1_eval_flat_index": 3
+      }
+    ]
+  }
+]

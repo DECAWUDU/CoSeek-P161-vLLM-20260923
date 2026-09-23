@@ -1,0 +1,21 @@
+[
+  {
+    "video_id": "needle_18",
+    "video_path": "data/mlvu/videos/2_needle/needle_18.mp4",
+    "duration": 494.0,
+    "conversations": [
+      {
+        "question": "Where are the people tourists walking?",
+        "choices": [
+          "In a city",
+          "In a forest",
+          "On the embankment in a fishing village",
+          "On a beach"
+        ],
+        "answer": "On the embankment in a fishing village",
+        "question_type": "findNeedle",
+        "_original_index": 0
+      }
+    ]
+  }
+]

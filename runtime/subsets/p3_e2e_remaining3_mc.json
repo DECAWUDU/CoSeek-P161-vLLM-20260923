@@ -1,0 +1,47 @@
+[
+  {
+    "video_id": "movie101_16",
+    "video_path": "data/mlvu/videos/1_plotQA/movie101_16.mp4",
+    "duration": 740,
+    "conversations": [
+      {
+        "question": "What color is the water bottle on the table in the video?",
+        "choices": ["White", "Yellow", "Blue", "Green"],
+        "answer": "Green",
+        "question_type": "plotQA",
+        "_original_index": 2,
+        "_v75_1_eval_flat_index": 2
+      }
+    ]
+  },
+  {
+    "video_id": "needle_72",
+    "video_path": "data/mlvu/videos/2_needle/needle_72.mp4",
+    "duration": 471.08,
+    "conversations": [
+      {
+        "question": "What is the woman doing in the flower shop?",
+        "choices": ["Cleaning the shop", "Arranging books", "Watering the plants", "Making a bouquet of fresh flowers"],
+        "answer": "Making a bouquet of fresh flowers",
+        "question_type": "findNeedle",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 28
+      }
+    ]
+  },
+  {
+    "video_id": "ego_41",
+    "video_path": "data/mlvu/videos/3_ego/ego_41.mp4",
+    "duration": 480.0333333333333,
+    "conversations": [
+      {
+        "question": "What did i put on the shelf?",
+        "choices": ["Book", "Cup", "Pencil", "Spray"],
+        "answer": "Spray",
+        "question_type": "ego",
+        "_original_index": 0,
+        "_v20_source_flat_index": 49
+      }
+    ]
+  }
+]

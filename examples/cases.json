@@ -1,0 +1,8 @@
+[
+  {
+    "id": "example_001",
+    "video": "/absolute/path/to/video.mp4",
+    "question": "What does the person pick up?",
+    "choices": ["A red bag", "A cup", "A book", "A phone"]
+  }
+]

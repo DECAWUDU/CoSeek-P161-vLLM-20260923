@@ -1,0 +1,22 @@
+[
+  {
+    "video_id": "en_tv_11",
+    "video_path": "data/mlvu/videos/1_plotQA/en_tv_11.mp4",
+    "duration": 465,
+    "conversations": [
+      {
+        "question": "Why are the woman in blue clothing and the man with a scar on his face surrounded by armed personnel?",
+        "choices": [
+          "Because they had a fight",
+          "Because they killed someone",
+          "Because they triggered the alarm device",
+          "Because they robbed"
+        ],
+        "answer": "Because they triggered the alarm device",
+        "question_type": "plotQA",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 29
+      }
+    ]
+  }
+]

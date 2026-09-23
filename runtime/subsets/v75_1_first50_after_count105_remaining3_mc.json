@@ -1,0 +1,62 @@
+[
+  {
+    "video_id": "needle_18",
+    "video_path": "data/mlvu/videos/2_needle/needle_18.mp4",
+    "duration": 494.0,
+    "conversations": [
+      {
+        "question": "Where are the people tourists walking?",
+        "choices": [
+          "In a city",
+          "In a forest",
+          "On the embankment in a fishing village",
+          "On a beach"
+        ],
+        "answer": "On the embankment in a fishing village",
+        "question_type": "findNeedle",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 45
+      }
+    ]
+  },
+  {
+    "video_id": "movie101_89",
+    "video_path": "data/mlvu/videos/7_topic_reasoning/movie101_89.mp4",
+    "duration": 677,
+    "conversations": [
+      {
+        "question": "What type of film is this?",
+        "choices": [
+          "Comedy",
+          "Mystery",
+          "Action",
+          "Documentary"
+        ],
+        "answer": "Documentary",
+        "question_type": "topic_reasoning",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 47
+      }
+    ]
+  },
+  {
+    "video_id": "ego_41",
+    "video_path": "data/mlvu/videos/3_ego/ego_41.mp4",
+    "duration": 480.0333333333333,
+    "conversations": [
+      {
+        "question": "What did i put on the shelf?",
+        "choices": [
+          "Book",
+          "Cup",
+          "Pencil",
+          "Spray"
+        ],
+        "answer": "Spray",
+        "question_type": "ego",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 49
+      }
+    ]
+  }
+]

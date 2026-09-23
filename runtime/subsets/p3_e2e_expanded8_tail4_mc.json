@@ -1,0 +1,67 @@
+[
+  {
+    "video_id": "surveil_59",
+    "video_path": "data/mlvu/videos/6_anomaly_reco/surveil_59.mp4",
+    "duration": 1200.63,
+    "conversations": [
+      {
+        "question": "Is there anything unusual in this surveillance video? if there is, what type of unusual activity is it?",
+        "choices": ["Burglary", "Shooting", "Normal", "RoadAccidents"],
+        "answer": "Normal",
+        "question_type": "anomaly_reco",
+        "_original_index": 0,
+        "_v75_1_eval_flat_index": 14
+      }
+    ]
+  },
+  {
+    "video_id": "en_tv_31",
+    "video_path": "data/mlvu/videos/1_plotQA/en_tv_31.mp4",
+    "duration": 577,
+    "conversations": [
+      {
+        "question": "What is the woman in the blue dress holding in the video?",
+        "choices": ["Food", "Mirror", "Flower", "Water Cup"],
+        "answer": "Flower",
+        "question_type": "plotQA",
+        "_original_index": 0,
+        "_v20_source_flat_index": 11
+      }
+    ]
+  },
+  {
+    "video_id": "movie101_104",
+    "video_path": "data/mlvu/videos/1_plotQA/movie101_104.mp4",
+    "duration": 514,
+    "conversations": [
+      {
+        "question": "What is the girl with glasses' mood after receiving the letter for the second time?",
+        "choices": ["Neutral", "Excited", "Disappointed", "Happy"],
+        "answer": "Happy",
+        "question_type": "plotQA",
+        "_original_index": 2,
+        "_v20_source_flat_index": 27
+      }
+    ]
+  },
+  {
+    "video_id": "order_250",
+    "video_path": "data/mlvu/videos/5_order/order_250.mp4",
+    "duration": 490.03,
+    "conversations": [
+      {
+        "question": "Can you tell me which option represents the actual order of actions shown in the video?",
+        "choices": [
+          "pole vault --> baking cookies --> tossing coin --> abseiling",
+          "tossing coin --> pole vault --> baking cookies --> abseiling",
+          "baking cookies --> tossing coin --> pole vault --> abseiling",
+          "baking cookies --> abseiling --> tossing coin --> pole vault"
+        ],
+        "answer": "baking cookies --> tossing coin --> pole vault --> abseiling",
+        "question_type": "order",
+        "_original_index": 0,
+        "_v20_source_flat_index": 32
+      }
+    ]
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "video_id": "en_tv_31",
+    "video_path": "data/mlvu/videos/1_plotQA/en_tv_31.mp4",
+    "duration": 577,
+    "conversations": [
+      {
+        "question": "What does the drone operated by the two men hit?",
+        "choices": ["Photo", "Cabinet", "Vase", "Table"],
+        "answer": "Photo",
+        "question_type": "plotQA",
+        "_original_index": 2,
+        "_v20_source_flat_index": 13
+      }
+    ]
+  },
+  {
+    "video_id": "movie101_104",
+    "video_path": "data/mlvu/videos/1_plotQA/movie101_104.mp4",
+    "duration": 514,
+    "conversations": [
+      {
+        "question": "Why does the girl with glasses run downstairs in a hurry?",
+        "choices": ["Chasing someone", "Being chased", "To help another girl out of a situation", "To get something"],
+        "answer": "To help another girl out of a situation",
+        "question_type": "plotQA",
+        "_original_index": 0,
+        "_v20_source_flat_index": 25
+      }
+    ]
+  },
+  {
+    "video_id": "ego_74",
+    "video_path": "data/mlvu/videos/3_ego/ego_74.mp4",
+    "duration": 480.0,
+    "conversations": [
+      {
+        "question": "How many picture frames were on the wall in the living room?",
+        "choices": ["3", "1", "2", "4"],
+        "answer": "2",
+        "question_type": "ego",
+        "_original_index": 3,
+        "_v20_source_flat_index": 22
+      }
+    ]
+  },
+  {
+    "video_id": "needle_13",
+    "video_path": "data/mlvu/videos/2_needle/needle_13.mp4",
+    "duration": 493.15,
+    "conversations": [
+      {
+        "question": "What are the volunteers doing in the rubble during the simulation drill?",
+        "choices": ["Hiding from an enemy", "Creating a barricade", "Building a structure", "Searching for rocket attack casualties"],
+        "answer": "Searching for rocket attack casualties",
+        "question_type": "findNeedle",
+        "_original_index": 5
+      }
+    ]
+  }
+]
