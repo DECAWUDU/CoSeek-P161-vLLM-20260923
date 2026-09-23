@@ -1,0 +1,13 @@
+ test_all_remote_roles_change_without_search_or_budget_changes (test_deployment.ConfigTests.test_all_remote_roles_change_without_search_or_budget_changes) ... ok
+test_interpreter_path_does_not_resolve_venv_symlink (test_deployment.ConfigTests.test_interpreter_path_does_not_resolve_venv_symlink) ... ok
+test_multichoice_subtitle_validation (test_deployment.ConfigTests.test_multichoice_subtitle_validation) ... ok
+test_rejects_incomplete_or_reasoning_only_output (test_deployment.ConfigTests.test_rejects_incomplete_or_reasoning_only_output) ... ok
+test_request_keeps_images_but_omits_gpt_parameters (test_deployment.ConfigTests.test_request_keeps_images_but_omits_gpt_parameters) ... ok
+test_server_default_not_silently_disabled (test_deployment.ConfigTests.test_server_default_not_silently_disabled) ... ok
+test_real_sdk_wire_model_discovery_and_usage_logging (test_deployment.WireTests.test_real_sdk_wire_model_discovery_and_usage_logging) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 3.550s
+
+OK
+

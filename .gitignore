@@ -9,4 +9,6 @@ __pycache__/
 *.pyc
 runs/
 *.log
+!/provenance/preflight.log
+!/provenance/sdk_tests.log
 .DS_Store
